@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com">
+
+    </script>
+</head>
+
+<body>
+    <header class="flex justify-between p-10 bg-blue-500 text-white text-xl">
+        <div>
+            <h1>Zaap</h1>
+        </div>
+        <div>
+            <ul class="flex gap-8 items-center p-1">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About Us</li>
+                </a>
+                <a href="#">
+                    <li>Courses</li>
+                </a>
+                <a href="#">
+                    <li>Projects</li>
+                </a>
+                <a href="#">
+                    <li>Contacts</li>
+                </a>
+            </ul>
+        </div>
+        <div>
+            <button type="submit" class="bg-white border text-blue-500 p-1 text-lg rounded-md">Logout</button>
+        </div>
+    </header>
+    <section class="flex flex-col justify-center">
+        <h1 class="text-center text-3xl m-10">Profile Summary</h1>
+        <div class="flex gap-10 justify-center p-5">
+            <div class="bg-blue-500 font-bold text-white rounded-lg flex flex-col justify-center items-center  p-10 ">
+                <p><span id="TotalBal">1000</span></p>
+                <p>Total Balance</p>
+            </div>
+            <div class="bg-blue-500 font-bold text-white rounded-lg  flex flex-col justify-center items-center p-10">
+                <p><span id="Percent">50</span></p>
+                <p class="flex-wrap w-40">Amount Added Percentage(%)</p>
+            </div>
+            <div class="bg-blue-500 font-bold text-white rounded-lg flex  flex-col justify-center items-center p-10 ">
+                <p><span id="AmountAdd">0</span></p>
+                <p>Total Amount Added</p>
+            </div>
+            <div class="bg-blue-500 font-bold text-white rounded-lg flex flex-col justify-center items-center p-10">
+                <p><span id="CashBack">0</span></p>
+                <p>Cashback Earned</p>
+            </div>
+        </div>
+        <div>
+            <p class="p-3 text-center" id="message"></p>
+        </div>
+        <div class="flex justify-center gap-10 py-5">
+            <button id="DeBtn" class="bg-white text-blue-500 border border-blue-500 py-3 px-10">Debit Amount</button>
+            <button id="CeBtn" class="text-white bg-blue-500 border border-blue-500 py-3 px-10">Credit Amount</button>
+        </div>
+    </section>
+
+    <section>
+        <div class="flex gap-20 justify-center rounded-lg p-10 border-dashed border-2 border-blue-500 mx-20 mt-10">
+            <div class="text-center">
+                <p class="p-2 text-lg">Service</p>
+                <p><span class="text-blue-500 font-bold">some service</span></p>
+            </div>
+            <div class="text-center">
+                <p class="p-2 text-lg">Your Referrals</p>
+                <p><span class="text-blue-500 font-bold">0+ 0</span></p>
+            </div>
+            <div class="text-center">
+                <p class="p-2 text-lg">Active Referrals</p>
+                <p><span class="text-blue-500 font-bold">0+ 0</span></p>
+            </div>
+            <div class="text-center">
+                <p class="p-2 text-lg">Total Ref.Earnings</p>
+                <p><span class="text-blue-500 font-bold">$0.00</span></p>
+            </div>
+            <div class="text-center">
+                <p class="p-2 text-lg">Total Withdrawal</p>
+                <p><span class="text-blue-500 font-bold">$1000.00</span></p>
+            </div>
+        </div>
+        <div class="mt-10">
+            <h1 class="text-3xl text-center">Zaap</h1>
+            <p class="text-center m-8 text-2xl">Get updated anytime,anywhere and from anyone</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-blue-500 text-white p-10">
+            <p class="text-center text-2xl">@2025 LinkUp Inc, All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="zaap.js"></script>
+</html>
